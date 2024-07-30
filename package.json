@@ -2,7 +2,11 @@
   "name": "querodelivery",
   "version": "1.0.0",
   "description": "Uma lib para te ajudar com a API do Quero Delivery",
-  "main": "index.js",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "tsx --watch src/index.ts",
     "build": "tsup src/index.ts --dts --minify --format esm --out-dir dist",
