@@ -1,0 +1,36 @@
+{
+  "name": "querodelivery",
+  "version": "1.0.0",
+  "description": "Uma lib para te ajudar com a API do Quero Delivery",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch src/index.ts",
+    "build": "tsup src/index.ts --dts --minify --format esm --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misterioso013/querodelivery-node.git"
+  },
+  "keywords": [
+    "qd-api",
+    "delivery",
+    "api"
+  ],
+  "author": "Rosiel Victor <rosielvictor.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/misterioso013/querodelivery-node/issues"
+  },
+  "homepage": "https://github.com/misterioso013/querodelivery-node#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "tsup": "^8.2.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "zod": "^3.23.8"
+  }
+}
